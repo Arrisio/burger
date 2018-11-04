@@ -1,3 +1,21 @@
-@import "fonts";
+@import "./layouts/normalize";
+@import "./layouts/variables.scss";
 
-@import "blocks/header";
+//setup
+@import "./layouts/mixins";
+@import "./layouts/fonts";
+@import "./layouts/base";
+
+
+
+// Blocks
+@import "./blocks/hero";
+@import "./blocks/navbar";
+@import "./blocks/header";
+@import "./blocks/contacts";
+@import "./blocks/burgers";
+@import "./blocks/form";
+@import "./blocks/how_work";
+@import "./blocks/menu";
+@import "./blocks/reviews";
+@import "./blocks/we";

@@ -23,6 +23,7 @@
 .settings
 .tmproj
 Thumbs.db
+**/desktop.ini
 
 # Folders to ignore
 .CVS

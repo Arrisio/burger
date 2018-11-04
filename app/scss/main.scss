@@ -9,8 +9,11 @@
 
 
 // Blocks
+@import "./blocks/btn";
+@import "./blocks/title";
 @import "./blocks/hero";
-@import "./blocks/navbar";
+@import "./blocks/down-btn";
+@import "./blocks/nav";
 @import "./blocks/header";
 @import "./blocks/contacts";
 @import "./blocks/burgers";
@@ -18,4 +21,5 @@
 @import "./blocks/how_work";
 @import "./blocks/menu";
 @import "./blocks/reviews";
-@import "./blocks/we";
+@import "./blocks/we-best";
+@import "./blocks/we-best-item";

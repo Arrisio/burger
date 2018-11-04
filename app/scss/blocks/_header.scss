@@ -1,6 +1,32 @@
 .header {
-    position: fixed;
+    max-width: 940px;
+    width: 95%;
+
+    position: absolute;
     top: 0;
+    left: 0;
     right: 0;
-    bottom: 0;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 12px;
+    z-index: 1;
+
+    &__logo {
+        margin-right: 4vw;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+
+    }
 }

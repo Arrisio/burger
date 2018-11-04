@@ -1,0 +1,19 @@
+.we-best-item {
+	display: grid;
+	grid-template-areas:
+		"img"
+		"title"
+		"desc";
+
+	&__img_wrapper {
+		grid-area: img;
+	}
+
+	&__title {
+		grid-area: title
+	}
+
+	&__desc {
+		grid-area: desc
+	}
+}

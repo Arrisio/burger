@@ -1,1 +1,35 @@
-.hero__container {}
+.hero {
+	&__container {
+		// display: flex;
+		// align-items: center;
+		// justify-content: space-around;
+
+		display: grid;
+		grid-template-areas:
+			"img title"
+			"img desc";
+	}
+
+	&__picture {
+		grid-area: img;
+		margin-bottom: 10vh;
+	}
+
+	&__title {
+		grid-area: title;
+		align-self: end;
+		padding-left: 1vh;
+	}
+
+	&__desc {
+		grid-area: desc;
+		align-self: start;
+		color: #fff;
+		font-family: Lifehack;
+		font-size: 65px;
+		line-height: 1;
+		padding-left: 1vh;
+	}
+
+
+}

@@ -12,37 +12,21 @@
 
 <body>
 	<div class="wrapper">
+
 		<div class="maincontent">
-			<section class="hero section" style="background-image: url('img/hero/Rectangle\ 11.png')">
+			<section class="hero section" style="background-image: url('/img/hero/Rectangle\ 11.png')">
 
 				<div class="container">
 
-					<header class="header">
-						<a href="" class="logo">
-							<img src="./img/hero/logo.png" alt="" class="logo__picture">
-						</a>
-						<nav class="nav">
-							<ul class="nav__list">
-								<li class="nav__items"><a href="#" class="nav__link">О нас</a></li>
-								<li class="nav__items"><a href="#" class="nav__link">Бургуры</a></li>
-								<li class="nav__items"><a href="#" class="nav__link">Команда</a></li>
-								<li class="nav__items"><a href="#" class="nav__link">Меню</a></li>
-								<li class="nav__items"><a href="#" class="nav__link">Отзывы</a></li>
-								<li class="nav__items"><a href="#" class="nav__link">Как мы рыботаем</a></li>
-								<li class="nav__items"><a href="#" class="nav__link">Контакты</a></li>
-							</ul>
-						</nav>
-						<a href="#" class="order-btn">Заказать</a>
-					</header>
 
 					<div class="hero__container">
 						<div class="hero__picture">
-							<img src="./img/hero/burger" alt="" class="hero__burger-img">
+							<img src="./img/hero/burger.png" alt="" class="hero__burger-img">
 						</div>
-						<div class="hero__content">
-							<h1 class="hero__title">МЫ ДЕЛАЕМ
-						</div>
-						<div class="hero__description">натуральные бургеры</div>
+
+						<h1 class="hero__title title">МЫ ДЕЛАЕМ</h1>
+
+						<div class="hero__desc">натуральные бургеры</div>
 					</div>
 				</div>
 
@@ -54,9 +38,59 @@
 
 
 
-		<section class="we" style="background-image: url('./img/we/bg.png') ">
+		<section class="we-best section">
 			<div class="container">
-				<h1>we</h1>
+				<div class="we-best__container">
+					<div class="we-best__title title title__color--black">Мы лучшие</div>
+					<we-best class="we-best__list_wrapper">
+						<ul class="we-best__list">
+							<li class="we-best__item "></li>
+							<div class="we-best-item">
+								<div class="we-best-item__img_wrapper">
+									<img src="./img/we-best/meat.png" alt="meat.png" class="we-best-item__img">
+								</div>
+								<div class="we-best-item__title">100% свежее мясо</div>
+								<div class="we-best-item__desc">
+									<p>
+										Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+									</p>
+								</div>
+							</div>
+
+
+							<li class="we-best__item">
+								<div class="we-best-item">
+									<div class="we-best-item__img_wrapper">
+										<img src="./img/we-best/hand.png" alt="hand.png" class="we-best-item__img">
+									</div>
+									<div class="we-best-item__title">Ручная сборка</div>
+									<div class="we-best-item__desc">
+										<p>
+											Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
+											притягивает сюжетный реформаторский пафос.
+										</p>
+									</div>
+								</div>
+
+							</li>
+							<li class="we-best__item">
+								<div class="we-best-item">
+									<div class="we-best-item__img_wrapper">
+										<img src="./img/we-best/natural.png" alt="natural.png" class="we-best-item__img">
+									</div>
+									<div class="we-best-item__title">Натуральные ингредиенты</div>
+									<div class="we-best-item__desc">
+										<p>
+											Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+										</p>
+									</div>
+								</div>
+
+							</li>
+						</ul>
+					</we-best>
+
+				</div>
 			</div>
 		</section>
 		<section class="burgers" style="background-color: rgb(249,180,59)">
@@ -65,8 +99,33 @@
 			</div>
 		</section>
 
+		<!-- .fixed_menu -->
+		<header class="header">
+			<a href="" class="header__logo">
+				<img src="./img/hero/logo.png" alt="mr. burger logo" class="logo__picture">
+			</a>
+			<div class="header__buttons">
+
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Бургуры</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Меню</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Как мы рыботаем</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<a href="#" class="btn order-btn btn">Заказать</a>
+
+
+		</header>
+		<a class="down-btn" href="#">
+			<img class="down-btn__img" src="./img/icons/arrow-scroll.svg" alt="go to next screen">
+		</a>
 	</div>
-	<!-- .fixed_menu -->
 </body>
 <script src="./libs/jquery-3.3.1.min.js"></script>
 <script src="./js/app.min.js"></script>

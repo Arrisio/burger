@@ -1,0 +1,10 @@
+.reviews {
+	background: #000;
+
+	&__item {
+		width: 25%;
+		height: 50%;
+		filter: grayscale(100%);
+		background: url("../img/reviews/photo-1.png") center center / cover no-repeat;
+	}
+}

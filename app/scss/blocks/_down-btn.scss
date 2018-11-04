@@ -1,0 +1,21 @@
+.down-btn {
+
+	position: absolute;
+	max-width: 10%;
+	z-index: 1;
+
+
+	position: absolute;
+	// top: 0;
+	bottom: 100px;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	&__img {
+		content: url("../img/icons/arrow-scroll.svg");
+		height: 4vh;
+		width: 2.5vw;
+	}
+
+}

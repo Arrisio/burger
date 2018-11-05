@@ -28,6 +28,12 @@ body {
 	width: 95%;
 	display: flex;
 	flex-direction: column;
+
+	&--full-screen-grid {
+		height: 100%;
+		flex-direction: initial;
+		flex-wrap: wrap;
+	}
 }
 
 .section {
@@ -41,6 +47,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative; // ЧТоб на 1й странице внизу экрана можно было прикрутить стрелку вниз
 }
 
 h1,

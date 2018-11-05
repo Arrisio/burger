@@ -1,8 +1,11 @@
 .hero {
+	background-image: url('../img/hero/bg.png');
+
 	&__container {
 		// display: flex;
 		// align-items: center;
 		// justify-content: space-around;
+
 
 		display: grid;
 		grid-template-areas:

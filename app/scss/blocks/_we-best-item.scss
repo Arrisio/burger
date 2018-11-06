@@ -5,15 +5,28 @@
 		"title"
 		"desc";
 
+
 	&__img_wrapper {
 		grid-area: img;
+		margin-bottom: 0.9375rem;
+
+
+	}
+
+	&__img {
+		height: 5.3125rem;
 	}
 
 	&__title {
-		grid-area: title
+		grid-area: title;
+		font-size: 1.5rem;
+		font-family: lifehack, cursive;
+		font-weight: 500;
+		font-style: normal;
+		margin-bottom: 1.25rem;
 	}
 
 	&__desc {
-		grid-area: desc
+		grid-area: desc;
 	}
 }

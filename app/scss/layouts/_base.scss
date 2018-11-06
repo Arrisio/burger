@@ -31,6 +31,7 @@ body {
 
 	&--full-screen-grid {
 		height: 100%;
+		max-width: initial;
 		flex-direction: initial;
 		flex-wrap: wrap;
 	}

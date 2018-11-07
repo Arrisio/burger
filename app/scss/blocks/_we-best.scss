@@ -1,0 +1,22 @@
+.we-best {
+	background-image: url('../img/we-best/bg.png');
+	text-align: center;
+
+
+	& .title {
+		margin-bottom: 3.75rem;
+	}
+
+
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__item {
+		flex: 1;
+		margin-bottom: 3.125rem;
+		padding: 0 0.9375rem;
+	}
+}

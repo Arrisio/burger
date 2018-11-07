@@ -1,0 +1,13 @@
+.title {
+	font-family: Gagalin;
+	font-size: 72px;
+	color: $yellow;
+
+	&__color--black {
+		color: $black;
+	}
+
+	&__color--white {
+		color: #fff;
+	}
+}

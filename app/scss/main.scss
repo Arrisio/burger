@@ -1,0 +1,26 @@
+@import "./layouts/normalize";
+@import "./layouts/variables.scss";
+
+//setup
+@import "./layouts/mixins";
+@import "./layouts/fonts";
+@import "./layouts/base";
+
+
+
+// Blocks
+@import "./blocks/btn";
+@import "./blocks/title";
+@import "./blocks/hero";
+@import "./blocks/down-btn";
+@import "./blocks/nav";
+@import "./blocks/header";
+@import "./blocks/vert-slider";
+@import "./blocks/contacts";
+@import "./blocks/burgers";
+@import "./blocks/form";
+@import "./blocks/how_work";
+@import "./blocks/menu";
+@import "./blocks/reviews";
+@import "./blocks/we-best";
+@import "./blocks/we-best-item";

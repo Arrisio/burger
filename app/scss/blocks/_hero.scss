@@ -13,11 +13,22 @@
 			"img desc";
 	}
 
-	&__picture {
+	&__img-wrapper {
 		grid-area: img;
 		margin-bottom: 6rem;
 		margin-right: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
+
+	&__burger-img {
+		min-width: 100%;
+		min-height: 100%;
+		object-fit: contain;
+
+	}
+
 
 	&__title {
 		grid-area: title;

@@ -1,6 +1,7 @@
 %vert-slider-links-shared {
 	content: "";
 	position: absolute;
+
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -9,11 +10,12 @@
 }
 
 .vert-slider {
-	&__list {
-		position: absolute;
-		top: 90px;
-		right: 49px;
-	}
+	position: absolute;
+	z-index: 20;
+	top: 90px;
+	right: 49px;
+
+	// &__list {}
 
 	&__item {
 		margin-bottom: 16px;

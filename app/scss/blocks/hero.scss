@@ -11,6 +11,14 @@
 		grid-template-areas:
 			"img title"
 			"img desc";
+
+		// @include tables {
+		// 	grid-template-areas:
+		// 		"img"
+		// 		"title"
+		// 		"desc";
+		// }
+
 	}
 
 	&__img-wrapper {

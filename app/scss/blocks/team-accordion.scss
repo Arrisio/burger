@@ -1,0 +1,80 @@
+.team-accordion {
+	color: #ffffff;
+
+	&__item {
+		margin-bottom: 2.5rem;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		font-size: 0.875rem;
+		font-family: gagalin, cursive;
+		text-transform: uppercase;
+
+
+		.is-active &,
+		.team-accordion__item:hover & {
+			color: $yellow;
+		}
+	}
+
+
+
+	&__link:before {
+		content: '';
+		border-top: 0.4375rem solid #f9b43b;
+		border-left: 0.3125rem solid transparent;
+		border-right: 0.3125rem solid transparent;
+		border-bottom: 0px solid transparent;
+
+		margin-right: .8rem;
+		transform: rotate(0deg);
+		transition: .3s;
+
+		.is-active &,
+		.team-accordion__item:hover & {
+			transform: rotate(180deg)
+		}
+	}
+
+
+	&__member-details {
+		padding-top: 1.25rem;
+		max-height: 0;
+		transition: max-height 1s;
+		overflow: hidden;
+		display: grid;
+		grid-row: auto, 1fr;
+		grid-template: auto 1fr / auto 1fr;
+		grid-template-areas:
+			'photo position'
+			'photo desc';
+
+		.is-active &,
+		.team-accordion__item:hover & {
+			max-height: 600px;
+		}
+	}
+
+
+	&__member-photo {
+		grid-area: photo;
+		margin-right: 1.25rem;
+	}
+
+	&__member-position {
+		grid-area: position;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 0.875rem;
+		margin-bottom: 0.875rem;
+
+	}
+
+	&__member-desc {
+		grid-area: desc;
+	}
+
+}

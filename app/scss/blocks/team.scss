@@ -1,0 +1,21 @@
+.team {
+	background-image: url('../img/team/bg.png');
+
+	// height: 100%;
+	&__container {
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		background-color: rgba(47, 50, 52, 0.93);
+
+	}
+
+	&__details {
+		margin: 5% 2% 0 7%;
+	}
+
+	&__title {
+		margin-bottom: 5rem;
+	}
+}

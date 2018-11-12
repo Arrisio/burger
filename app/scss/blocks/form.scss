@@ -1,0 +1,155 @@
+.form-screen {
+	background-image: url("../img/form/bg-texture-dark.png");
+}
+
+.form {
+	max-width: 58.75rem;
+	min-width: 18.75rem;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__maincontent {
+		display: flex;
+		font-size: 0.875rem;
+
+		& * {
+			color: #fff;
+		}
+	}
+
+	&__col {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		margin-right: 1.25rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__row {
+		display: flex;
+		margin-bottom: 1.25rem;
+
+		& .btn {
+			margin-right: rem(20px);
+		}
+	}
+
+	&__block {
+		flex: 1;
+		margin-right: 1.25rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__input-title {
+
+		margin-bottom: rem(10px);
+
+	}
+
+	&__input {
+		border: 1px solid transparent;
+		border-radius: 0.3125rem;
+		width: 100%;
+		padding: 0.3125rem 0.625rem;
+	}
+
+	&__textarea {
+		height: 110px;
+		resize: none;
+	}
+
+	&__radio {
+		display: flex;
+		margin-right: 1.25rem;
+		align-items: center;
+
+		justify-content: center;
+		align-items: center;
+
+		// &-title {
+		// 	color: #fff;
+		// }
+
+		&-elem {
+			position: absolute;
+			top: 0;
+			left: -9999px;
+		}
+
+		&-fake {
+			margin-right: rem(10px);
+			width: 1rem;
+			height: 1rem;
+			border-radius: 50%;
+			background: #fff;
+			position: relative;
+
+			&:after {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				background: $orange;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				border-radius: 50%;
+				transition: width .3s, height .3s;
+
+				.form__radio-elem:checked+& {
+					width: 0.5rem;
+					height: 0.5rem;
+				}
+			}
+		}
+	}
+
+	&__checkbox {
+		display: flex;
+		position: relative;
+		cursor: pointer;
+
+		&-elem {
+			position: absolute;
+			top: 0;
+			left: -9999px;
+		}
+
+		&-fake {
+			background-color: #fff;
+
+			width: 1rem;
+			height: 1rem;
+
+			position: relative;
+			margin-right: rem(12px);
+
+			.form__checkbox-elem:checked+&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: rem(11px);
+				height: rem(9px);
+
+				background: url('../img/icons/check.svg') center transparent no-repeat;
+
+				background-size: contain;
+
+
+
+			}
+		}
+
+	}
+}

@@ -4,6 +4,7 @@
 //setup
 @import "./layouts/mixins";
 @import "./layouts/fonts";
+@import "./layouts/media";
 @import "./layouts/base";
 
 
@@ -16,8 +17,10 @@
 @import "./blocks/nav";
 @import "./blocks/nav-screen";
 @import "./blocks/header";
+@import "./blocks/hamburger-menu-link";
 @import "./blocks/vert-slider";
 @import "./blocks/team";
+@import "./blocks/team-accordion";
 @import "./blocks/contacts";
 @import "./blocks/burgers";
 @import "./blocks/form";
@@ -26,3 +29,4 @@
 @import "./blocks/reviews";
 @import "./blocks/we-best";
 @import "./blocks/we-best-item";
+@import "./blocks/footer";

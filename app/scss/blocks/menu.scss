@@ -1,0 +1,71 @@
+.menu {
+	background-image: url('../img/menu/photo-big.png');
+	color: #fff;
+	position: relative;
+
+	&__title {
+		color: #fff;
+		position: absolute;
+		left: 5rem;
+		top: 5rem;
+	}
+}
+
+.menu-accordion {
+
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	max-width: 50%;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: stretch;
+
+	&__item {
+		display: flex;
+
+	}
+
+	&__link {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 5rem;
+	}
+
+	&__title {
+		white-space: nowrap;
+		color: #fff;
+		font-size: 2.5rem;
+		transform: rotate(-90deg);
+
+		.is-active & {
+			color: $yellow;
+		}
+	}
+
+	&__content {
+		// display: none;
+		background-color: rgba(47, 50, 52, 0.93);
+		max-width: 0;
+		transition: max-width 1s;
+
+		.is-active & {
+			max-width: rem(550px);
+		}
+
+		& p {
+			padding: 3.75rem 1.875rem;
+			line-height: 1.8;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 0.875rem;
+
+
+		}
+
+	}
+}

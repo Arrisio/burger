@@ -5,16 +5,35 @@
 		"title"
 		"desc";
 
+	@include phones {
+		grid-template-areas:
+			"img title"
+			"img desc";
+
+		text-align: left;
+	}
+
 
 	&__img_wrapper {
 		grid-area: img;
 		margin-bottom: 0.9375rem;
 
+		@include phones {
+			width: 10rem;
+		}
+
+
 
 	}
 
 	&__img {
-		height: 5.3125rem;
+		// height: 5.3125rem;
+		max-width: 100%;
+		max-height: 100%;
+		height: rem(85px);
+
+		// object-fit: contain;
+
 	}
 
 	&__title {

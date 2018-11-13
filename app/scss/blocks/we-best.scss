@@ -2,9 +2,14 @@
 	background-image: url('../img/we-best/bg.png');
 	text-align: center;
 
+	@include phones {
+		background-image: url('../img/we-best/phone_bg.jpg');
+		align-items: flex-start;
+	}
+
 
 	& .title {
-		margin-bottom: 3.75rem;
+		margin: 3.75rem 0;
 	}
 
 
@@ -12,6 +17,10 @@
 	&__list {
 		display: flex;
 		flex-direction: row;
+
+		@include phones {
+			flex-direction: column;
+		}
 	}
 
 	&__item {

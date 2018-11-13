@@ -5,11 +5,17 @@
 	align-items: center;
 	margin-left: rem(30px);
 	display: none;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 
 	@include tablets {
 		display: flex;
+		position: fixed;
+		top: 2.2rem;
+		right: 2.2rem;
+		z-index: 2;
 	}
-
 
 	&__bars {
 
@@ -28,6 +34,13 @@
 			display: block;
 			position: absolute;
 		}
-	}
 
+		&:before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+	}
 }

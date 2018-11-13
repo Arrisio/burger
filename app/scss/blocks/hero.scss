@@ -2,7 +2,11 @@
 	background-image: url('../img/hero/bg.png');
 
 	&__container {
+		margin: auto;
+		// max-width: 80%;
+		// max-height: 80%;
 		display: grid;
+		// grid-template: 1fr 1fr / 2fr 1fr;
 		grid-template-areas:
 			"img title"
 			"img desc";
@@ -12,26 +16,30 @@
 				"img"
 				"title"
 				"desc";
+			// align-items: center;
+			text-align: center;
 		}
 
 	}
 
 	&__img-wrapper {
+		margin: 0 auto;
 		grid-area: img;
-		margin-bottom: 6rem;
-		margin-right: 1rem;
+		// margin-bottom: 6rem;
+		// margin-right: 1rem;
+		align-self: center;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		height: 25rem;
+		width: 25rem;
 	}
 
 	&__burger-img {
-		min-width: 100%;
-		min-height: 100%;
-		object-fit: contain;
-
+		max-width: 100%;
+		max-height: 100%;
 	}
-
 
 	&__title {
 		grid-area: title;

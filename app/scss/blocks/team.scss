@@ -9,13 +9,26 @@
 		right: 0;
 		background-color: rgba(47, 50, 52, 0.93);
 
+		@include tablets {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
 	}
 
 	&__details {
 		margin: 5% 2% 0 7%;
-	}
 
-	&__title {
-		margin-bottom: 5rem;
+		@include tablets {
+			padding: 0 25%;
+		}
+
+
+		&__title {
+			margin-bottom: 5rem;
+		}
 	}
 }

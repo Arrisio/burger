@@ -13,6 +13,11 @@
 		font-family: gagalin, cursive;
 		text-transform: uppercase;
 
+		@include tablets {
+			font-size: rem(25px);
+		}
+
+
 
 		.is-active &,
 		.team-accordion__item:hover & {
@@ -51,6 +56,13 @@
 		grid-template-areas:
 			'photo position'
 			'photo desc';
+
+		@include tablets {
+			grid-template-areas:
+				'photo'
+				'position'
+				'desc';
+		}
 
 		.is-active &,
 		.team-accordion__item:hover & {

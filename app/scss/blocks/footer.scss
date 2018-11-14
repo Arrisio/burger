@@ -4,19 +4,36 @@
 	left: 0;
 	right: 0;
 	display: flex;
-
 	align-items: center;
 	justify-content: space-between;
 
+	@include phones {
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
 	padding: 0 10%;
+
+	@include tablets {
+		padding: 0 1rem;
+	}
+
 	background-color: $black;
 	height: 5rem;
 }
 
 .contacts {
+	@include phones {
+		margin-bottom: 5px;
+	}
+
 	&__address {
 		color: #fff;
 		margin-bottom: rem(14px);
+
+
+
+
 
 		@include phones {
 			margin-bottom: rem(6px);

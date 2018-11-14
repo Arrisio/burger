@@ -19,6 +19,10 @@
 	bottom: 0;
 	max-width: 50%;
 
+	@include tablets {
+		max-width: 100%;
+	}
+
 	display: flex;
 	justify-content: flex-end;
 	align-items: stretch;

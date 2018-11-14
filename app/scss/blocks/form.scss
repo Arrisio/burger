@@ -41,6 +41,11 @@
 
 	&__row {
 		display: flex;
+
+		@include phones {
+			justify-content: center;
+		}
+
 		margin-bottom: 1.25rem;
 
 		& .btn {

@@ -12,13 +12,13 @@
 .vert-slider {
 	position: absolute;
 	z-index: 20;
-	top: 90px;
-	right: 49px;
+	top: rem(90px);
+	right: rem(49px);
 
 	// &__list {}
 
 	&__item {
-		margin-bottom: 16px;
+		margin-bottom: rem(16px);
 	}
 
 	&__link {

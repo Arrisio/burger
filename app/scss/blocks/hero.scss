@@ -1,14 +1,17 @@
 .hero {
   background-image: url('../img/hero/bg.png');
+
   &__container {
     margin: auto;
     display: grid;
     grid-template-areas: "img title""img desc";
+
     @include tablets {
       grid-template-areas: "img""title""desc";
       text-align: center;
     }
   }
+
   &__img-wrapper {
     margin: 0 auto;
     grid-area: img;
@@ -19,15 +22,18 @@
     height: 25rem;
     width: 25rem;
   }
+
   &__burger-img {
     max-width: 100%;
     max-height: 100%;
   }
+
   &__title {
     grid-area: title;
     align-self: end;
-    font-size: 4.5rem;
+
   }
+
   &__desc {
     grid-area: desc;
     align-self: start;

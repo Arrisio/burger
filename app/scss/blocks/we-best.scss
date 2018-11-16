@@ -4,12 +4,18 @@
 
 	@include phones {
 		background-image: url('../img/we-best/phone_bg.jpg');
+		background-size: auto;
 		align-items: flex-start;
+
 	}
 
 
 	& .title {
 		margin: 3.75rem 0;
+
+		@include phones {
+			margin: 1rem 0;
+		}
 	}
 
 
@@ -27,5 +33,9 @@
 		flex: 1;
 		margin-bottom: 3.125rem;
 		padding: 0 0.9375rem;
+
+		@include phones {
+			padding: 0;
+		}
 	}
 }

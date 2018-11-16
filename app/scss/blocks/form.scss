@@ -13,10 +13,17 @@
 	&__maincontent {
 		display: flex;
 		font-size: rem(14px);
+		margin: 0 auto;
+
 
 		@include tablets {
 			flex-direction: column;
-			margin: 0 5rem;
+			width: 80%;
+		}
+
+		@include phones {
+			flex-direction: column;
+			width: 90%;
 		}
 
 		& * {
@@ -87,10 +94,7 @@
 
 		justify-content: center;
 		align-items: center;
-
-		// &-title {
-		// 	color: #fff;
-		// }
+		position: relative;
 
 		&-elem {
 			position: absolute;
@@ -99,6 +103,7 @@
 		}
 
 		&-fake {
+			flex-shrink: 0;
 			margin-right: rem(10px);
 			width: 1rem;
 			height: 1rem;

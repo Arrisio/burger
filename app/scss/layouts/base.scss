@@ -9,6 +9,10 @@ html {
 		font-size: 13px;
 	}
 
+	@include small-phones {
+		font-size: 11px;
+	}
+
 	html,
 	body {
 		height: 100%;
@@ -43,6 +47,10 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+
+	@include phones {
+		width: 95%;
+	}
 
 
 }

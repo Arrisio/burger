@@ -60,12 +60,20 @@
 	&__title {
 		font-family: gagalin, cursive;
 		margin-top: 10%;
+
+		@include phones {
+			margin-top: 0;
+		}
+
 		margin-bottom: 5%;
 	}
 
 	&__text {
 		margin-bottom: 5%;
 
+		@include phones {
+			display: none;
+		}
 
 	}
 

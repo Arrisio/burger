@@ -55,7 +55,6 @@
 	}
 
 	&__content {
-		// display: none;
 		background-color: rgba(47, 50, 52, 0.93);
 		width: 0;
 		transition: width 1s;
@@ -71,9 +70,6 @@
 			font-weight: 300;
 			font-style: normal;
 			font-size: 0.875rem;
-
-
 		}
-
 	}
 }

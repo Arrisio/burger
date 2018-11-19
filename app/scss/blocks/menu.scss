@@ -28,7 +28,7 @@
 
 	&__item {
 		display: flex;
-
+		justify-content: flex-end;
 	}
 
 	&__link {
@@ -57,11 +57,12 @@
 	&__content {
 		// display: none;
 		background-color: rgba(47, 50, 52, 0.93);
-		max-width: 0;
-		transition: max-width 1s;
+		width: 0;
+		transition: width 1s;
+		overflow: hidden;
 
 		.is-active & {
-			max-width: rem(550px);
+			width: 100%;
 		}
 
 		& p {

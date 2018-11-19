@@ -1,0 +1,121 @@
+%burgers-text {
+	color: white;
+	font-size: 0.875rem;
+	font-family: gagalin, cursive;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.burgers {
+	background: linear-gradient(0deg, rgb(249, 180, 59) 0%, rgb(235, 140, 56) 48%, rgb(249, 180, 59) 74%);
+
+	&__container {
+		position: relative;
+		// padding-bottom: 5.3125rem;
+	}
+
+	&__list {
+		position: relative;
+	}
+
+	&__ingredients {
+		position: absolute;
+		top: -1.25rem;
+	}
+
+	&__weight {
+		position: absolute;
+		z-index: 100;
+		bottom: -5rem;
+		left: 0;
+		opacity: .5;
+
+		&-icon {
+			background: url("../img/icons/kkal.svg")50% no-repeat;
+			background-size: contain;
+			width: 4.0625rem;
+			height: 3.75rem;
+			position: relative;
+		}
+
+		&-val {
+			position: absolute;
+			bottom: 0.5rem;
+			left: 52%;
+			transform: translateX(-50%);
+			text-align: center;
+			color: white;
+			@extend %burgers-text;
+			font-size: 1.25rem;
+
+		}
+
+		&-text {
+			@extend %burgers-text;
+		}
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__img {
+		flex: 1;
+		text-align: center;
+		align-items: flex-end;
+		display: flex;
+		justify-content: center;
+
+		&-pic {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+	}
+
+	&__desc {
+		flex: 1;
+	}
+
+	&__title {
+		line-height: 1em;
+		margin: 0.625rem 0 1.875rem 0.625rem;
+	}
+
+	&__text {
+		margin-bottom: 1.875rem;
+		color: #fff;
+	}
+
+	&__order {
+
+		display: flex;
+		align-items: flex-end;
+
+		&-price {
+			display: flex;
+			align-items: flex-end;
+			margin-right: 2rem;
+
+			color: $red;
+			@extend %burgers-text;
+
+			&-val {
+				font-size: 4.5rem;
+				line-height: 1;
+			}
+
+			&-currency {
+				font-size: 1.875rem;
+				line-height: 1;
+			}
+		}
+	}
+
+}

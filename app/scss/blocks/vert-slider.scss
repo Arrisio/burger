@@ -15,7 +15,7 @@
 	top: rem(90px);
 	right: rem(49px);
 
-	@include phones {
+	@include tablets {
 		display: none;
 	}
 

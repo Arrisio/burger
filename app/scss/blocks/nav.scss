@@ -9,7 +9,22 @@
 		display: flex;
 		justify-content: flex-end;
 
+		@include tablets {
+			flex-direction: column;
+		}
 
+
+	}
+
+	.nav_hamburger &__item {
+		display: block;
+		opacity: 0;
+		transition: opacity .05s;
+		// animation-fill-mode: forwards;
+
+		&.is-active {
+			opacity: 1;
+		}
 	}
 
 	&__link {
@@ -19,6 +34,14 @@
 		display: flex;
 		align-items: center;
 
+		.nav_hamburger & {
+			font-size: 1.5625rem;
+			flex-direction: column;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 
 		&:after {
 			content: "";
@@ -28,6 +51,11 @@
 			border-radius: 50%;
 			background: #fff;
 			margin: 0 0.875rem;
+
+			.nav_hamburger & {
+				margin: 15px auto;
+			}
+
 		}
 	}
 

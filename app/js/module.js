@@ -1,21 +1,38 @@
-const menu_btn = document.querySelector('#menu_btn'),
-	ham_menu = document.querySelector('#ham_menu'),
-	ham_list = document.querySelector('#ham_list'),
+const menuBtn = document.querySelector('.hamburger-menu-link'),
+	hamMenu = document.getElementById('hamburger-menu'),
+	hamList = document.getElementById('nav__list_hamburger'),
+	// hamList = document.querySelector('.hamburger-menu'),
 	body = document.querySelector('body');
+hamListItems = document.querySelectorAll('.nav_hamburger .nav__item');
+// console.log(hamListItems);
 
-function toggleMenu() {
-	menu_btn.classList.toggle('is-active');
-	ham_menu.classList.toggle('is-active');
+function sleep(ms) {
+	return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function toggleMenu() {
+	menuBtn.classList.toggle('is-active');
 	body.classList.toggle('is-locked');
+	hamMenu.classList.toggle('is-active');
+
+	for (var i = 0; i < hamListItems.length; ++i) {
+		hamListItems[i].classList.toggle('is-active');
+		await sleep(100);
+	};
 };
 
-menu_btn.addEventListener('click', function (e) {
+menuBtn.addEventListener('click', function (e) {
 	e.preventDefault();
 	toggleMenu();
 });
-ham_list.addEventListener('click', function (e) {
+hamList.addEventListener('click', function (e) {
 	let el = e.target;
 	if (el.tagName == 'A') {
 		toggleMenu();
 	};
+});
+
+document.addEventListener("keydown", function (e) {
+	if (e.keyCode == 27 && hamMenu.classList.contains('is-active')) {
+		toggleMenu();
+	}
 });

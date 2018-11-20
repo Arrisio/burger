@@ -1,0 +1,11 @@
+%arrow-btn {
+	content: url("../img/icons/arrow-scroll.svg");
+	height: 1rem;
+	width: 2rem;
+	transition: .3s;
+
+	&:hover {
+		height: 1.2rem;
+		width: 2.4rem;
+	}
+}

@@ -8,6 +8,8 @@
 	text-align: center;
 }
 
+
+
 .burgers {
 	background: linear-gradient(0deg, rgb(249, 180, 59) 0%, rgb(235, 140, 56) 48%, rgb(249, 180, 59) 74%);
 
@@ -28,9 +30,17 @@
 	&__weight {
 		position: absolute;
 		z-index: 100;
+		opacity: .5;
+
 		bottom: -5rem;
 		left: 0;
-		opacity: .5;
+
+		@include tablets {
+			bottom: auto;
+			left: auto;
+			top: 0;
+			right: 0;
+		}
 
 		&-icon {
 			background: url("../img/icons/kkal.svg")50% no-repeat;
@@ -58,11 +68,17 @@
 	}
 
 	&__list {
+		max-width: 80%;
+		margin: auto;
 		display: flex;
 	}
 
 	&__item {
 		display: flex;
+
+		@include tablets {
+			flex-direction: column;
+		}
 	}
 
 	&__img {
@@ -81,11 +97,19 @@
 
 	&__desc {
 		flex: 1;
+
+		@include tablets {
+			text-align: center;
+		}
 	}
 
 	&__title {
 		line-height: 1em;
 		margin: 0.625rem 0 1.875rem 0.625rem;
+
+		@include tablets {
+			font-size: 3.125rem;
+		}
 	}
 
 	&__text {
@@ -97,6 +121,10 @@
 
 		display: flex;
 		align-items: flex-end;
+
+		@include tablets {
+			justify-content: center;
+		}
 
 		&-price {
 			display: flex;
@@ -116,6 +144,25 @@
 				line-height: 1;
 			}
 		}
+	}
+
+	&__prev {
+		@extend %arrow-btn;
+		transform: rotate(90deg) translateY(-50%);
+		position: absolute;
+		// left: -2rem;
+		top: 50%;
+		z-index: 200;
+	}
+
+	&__next {
+		@extend %arrow-btn;
+		transform: rotate(-90deg) translateY(-50%);
+		position: absolute;
+		right: 0;
+		top: 50%;
+
+		z-index: 200;
 	}
 
 }

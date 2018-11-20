@@ -15,7 +15,9 @@
 	top: rem(90px);
 	right: rem(49px);
 
-	// &__list {}
+	@include phones {
+		display: none;
+	}
 
 	&__item {
 		margin-bottom: rem(16px);

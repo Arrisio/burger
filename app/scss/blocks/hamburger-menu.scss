@@ -19,33 +19,3 @@
 		z-index: 1;
 	}
 }
-
-// .nav {
-// 	vertical-align: middle;
-
-// 	&_hamburger {
-// 		width: auto;
-
-
-// 		@include tablets {
-// 			display: block;
-// 		}
-
-// 		& .nav__list {
-// 			flex-direction: column;
-// 			text-align: center;
-// 		}
-
-// 		& .nav__item {
-// 			display: inline;
-// 			text-align: center;
-// 			opacity: 0;
-// 			animation-fill-mode: forwards;
-// 		}
-
-// 		& .nav__link {
-// 			font-size: 1.5625rem;
-
-// 		}
-// 	}
-// }

@@ -1,10 +1,9 @@
 const menuBtn = document.querySelector('.hamburger-menu-link'),
 	hamMenu = document.getElementById('hamburger-menu'),
 	hamList = document.getElementById('nav__list_hamburger'),
-	// hamList = document.querySelector('.hamburger-menu'),
 	body = document.querySelector('body');
 hamListItems = document.querySelectorAll('.nav_hamburger .nav__item');
-// console.log(hamListItems);
+
 
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));

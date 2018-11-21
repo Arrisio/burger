@@ -17,6 +17,7 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
+	max-width: 50%;
 
 	@include tablets {
 		max-width: 100%;
@@ -29,6 +30,7 @@
 	&__item {
 		display: flex;
 		justify-content: flex-end;
+		transition: width 1s;
 	}
 
 	&__link {
@@ -62,6 +64,8 @@
 
 		.is-active & {
 			width: 100%;
+
+
 		}
 
 		& p {

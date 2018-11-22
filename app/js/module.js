@@ -41,7 +41,7 @@ allAccordions = document.getElementsByClassName('accordion');
 
 
 
-function findParentAccordion(elt) {
+function findParentAccordItem(elt) {
 	let i = 0; // защита от зациклавания
 	while (
 		!(elt.parentElement.classList.contains('accordion')) &&
@@ -56,7 +56,7 @@ function findParentAccordion(elt) {
 for (let accordList of allAccordions) {
 	accordList.addEventListener('click', function (e) {
 		e.preventDefault();
-		clickedAccordItem = findParentAccordion(e.target);
+		clickedAccordItem = findParentAccordItem(e.target);
 		clickedAccordMenuItems = clickedAccordItem.parentElement.getElementsByTagName("LI");
 
 		for (let accordItem of clickedAccordMenuItems) {

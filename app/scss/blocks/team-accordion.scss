@@ -18,15 +18,10 @@
 			justify-content: center;
 		}
 
-
-
-		.is-active &,
-		.team-accordion__item:hover & {
+		.is-active & {
 			color: $yellow;
 		}
 	}
-
-
 
 	&__link:before {
 		content: '';
@@ -39,8 +34,7 @@
 		transform: rotate(0deg);
 		transition: .3s;
 
-		.is-active &,
-		.team-accordion__item:hover & {
+		.is-active & {
 			transform: rotate(180deg)
 		}
 	}
@@ -65,8 +59,7 @@
 				'desc';
 		}
 
-		.is-active &,
-		.team-accordion__item:hover & {
+		.is-active & {
 			max-height: 600px;
 		}
 	}

@@ -17,20 +17,19 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	max-width: 50%;
+	width: 50%;
 
 	@include tablets {
-		max-width: 100%;
+		width: 100%;
 	}
 
 	display: flex;
 	justify-content: flex-end;
-	align-items: stretch;
+
 
 	&__item {
 		display: flex;
 		justify-content: flex-end;
-		transition: width 1s;
 	}
 
 	&__link {
@@ -58,18 +57,12 @@
 
 	&__content {
 		background-color: rgba(47, 50, 52, 0.93);
-		width: 0;
-		transition: width 1s;
+		max-width: 0;
+		transition: all 1s;
 		overflow: hidden;
 
 		.is-active & {
-			width: rem(550px);
-
-			@include tablets {
-				max-width: 100%;
-			}
-
-
+			max-width: 100vw;
 		}
 
 		& p {

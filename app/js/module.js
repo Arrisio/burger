@@ -8,29 +8,34 @@ hamListItems = document.querySelectorAll('.nav_hamburger .nav__item');
 function аsleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+function аsleep(ms) {
+	return new Promise(resolve => setTimeout(resolve, ms));
+}
 async function toggleMenu() {
 	menuBtn.classList.toggle('is-active');
 	body.classList.toggle('is-locked');
 	hamMenu.classList.toggle('is-active');
 
-	for (var i = 0; i < hamListItems.length; ++i) {
-		hamListItems[i].classList.toggle('is-active');
-		await sleep(100);
+	for (let hamListItem of hamListItems) {
+		// console.log(hamListItem);
+		hamListItem.classList.toggle('is-active');
+		await аsleep(100);
 	};
 };
 
-menuBtn.addEventListener('click', function (e) {
+menuBtn.addEventListener('click', e => {
 	e.preventDefault();
 	toggleMenu();
 });
-hamList.addEventListener('click', function (e) {
+hamList.addEventListener('click', e => {
 	let el = e.target;
 	if (el.tagName == 'A') {
 		toggleMenu();
 	};
 });
 
-document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", e => {
 	if (e.keyCode == 27 && hamMenu.classList.contains('is-active')) {
 		toggleMenu();
 	}
@@ -54,7 +59,7 @@ function findParentAccordItem(elt) {
 
 
 for (let accordList of allAccordions) {
-	accordList.addEventListener('click', function (e) {
+	accordList.addEventListener('click', e => {
 		e.preventDefault();
 		clickedAccordItem = findParentAccordItem(e.target);
 		clickedAccordMenuItems = clickedAccordItem.parentElement.getElementsByTagName("LI");

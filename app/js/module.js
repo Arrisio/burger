@@ -57,7 +57,6 @@ function findParentAccordItem(elt) {
 	return elt;
 }
 
-
 for (let accordList of allAccordions) {
 	accordList.addEventListener('click', e => {
 		e.preventDefault();
@@ -73,3 +72,39 @@ for (let accordList of allAccordions) {
 		}
 	})
 };
+
+const orderForm = document.getElementById('order-form');
+const orderBtn = document.getElementById('order-btn');
+
+orderBtn.addEventListener('click', e => {
+	e.preventDefault();
+	void(0);
+})
+
+// Slider
+slider = new Siema({
+	selector: '.burgers__list',
+	duration: 200,
+	easing: 'ease-out',
+	perPage: 1,
+	startIndex: 0,
+	draggable: true,
+	multipleDrag: true,
+	threshold: 20,
+	loop: true,
+	rtl: false,
+	// onInit: () => {},
+	// onChange: () => {},
+});
+
+sliderNextBtn = document.getElementById('burgers_slider-control--next');
+sliderNextBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+	slider.next()
+});
+
+sliderPrevBtn = document.getElementById('burgers_slider-control--prev');
+sliderPrevBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+	slider.prev()
+});

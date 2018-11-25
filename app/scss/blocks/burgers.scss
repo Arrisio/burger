@@ -18,21 +18,18 @@
 		// padding-bottom: 5.3125rem;
 	}
 
-	&__list {
-		position: relative;
-	}
 
 	&__ingredients {
 		position: absolute;
-		top: -1.25rem;
+		top: 1.25rem;
 	}
 
 	&__weight {
 		position: absolute;
-		z-index: 100;
+		z-index: 2;
 		opacity: .5;
 
-		bottom: -5rem;
+		bottom: 0;
 		left: 0;
 
 		@include tablets {
@@ -68,12 +65,14 @@
 	}
 
 	&__list {
+		// position: relative;
 		max-width: 80%;
 		margin: auto;
-		display: flex;
+		// display: flex;
 	}
 
 	&__item {
+		position: relative;
 		display: flex;
 
 		@include tablets {

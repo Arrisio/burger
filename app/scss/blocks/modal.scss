@@ -1,0 +1,57 @@
+.modal {
+	position: absolute;
+	z-index: 1;
+	left: -99999px;
+	right: 0;
+	background: rgba(47, 50, 52, 0.9);
+	align-items: center;
+	justify-content: center;
+	display: none;
+	transition: opacity .3s;
+
+	&.is-active {
+		display: flex;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+	}
+
+	&__container {
+		background-color: rgba(255, 255, 255, 1);
+		width: 30rem;
+		border-radius: 5px;
+
+		@include phones {
+			width: 90%;
+		}
+	}
+
+	&__top-row {
+		display: flex;
+		justify-content: space-between;
+		margin: 1rem;
+	}
+
+	&__name {
+		font-family: gagalin, cursive;
+		font-weight: 300;
+		font-size: 0.875rem;
+		text-transform: uppercase;
+		// margin-bottom: 1.5625rem;
+	}
+
+	&__close {
+		grid-area: close_icon;
+		content: url('../img/icons/close.svg');
+	}
+
+	&__text {
+		font-size: 0.875rem;
+		font-family: ubuntu, Verdana, Arial, sans-serif;
+		font-weight: 300;
+		// font-style: normal;
+		margin: 1rem;
+	}
+}

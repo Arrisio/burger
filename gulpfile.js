@@ -10,14 +10,15 @@ var gulp = require('gulp'),
 	notify = require("gulp-notify"),
 	rsync = require('gulp-rsync'),
 	wait = require('gulp-wait'),
-	sourcemaps = require('gulp-sourcemaps');
+	sourcemaps = require('gulp-sourcemaps')
+cors = require('cors');
 
 gulp.task('browser-sync', function () {
 	browsersync({
 		server: {
 			baseDir: 'app'
 		},
-		notify: false,
+		notify: true,
 		// open: false,
 		// tunnel: true,
 		// tunnel: "projectname", //Demonstration page: http://projectname.localtunnel.me
@@ -79,6 +80,18 @@ gulp.task('rsync', function () {
 			silent: false,
 			compress: true
 		}))
+});
+
+gulp.task('connect', function () {
+	connect.server({
+
+		root: './framework/src/',
+		middleware: function () {
+			return [cors()];
+		},
+		port: 3000,
+		livereload: true
+	});
 });
 
 gulp.task('watch', ['styles', 'js', 'browser-sync'], function () {

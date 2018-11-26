@@ -273,7 +273,7 @@
 				<div class="burgers__ingredients ingredients">
 					<img class="ingredients__icon" src="./img/icons/burger.svg" alt="burger icon">
 					<div class="ingredients__text">состав</div>
-					<div class="ingredients__dropdown">
+					<a class="ingredients__dropdown">
 						<ul class="ingredients__list">
 							<li class="ingredients__row">
 								<div class="ingredients__cell"><img src="./img/icons/beef.svg" alt="ingredients__table-icon"></div>
@@ -294,7 +294,7 @@
 								</div>
 							</li>
 						</ul>
-					</div>
+					</a>
 				</div>
 				<div class="burgers__weight">
 					<div class="burgers__weight-icon">
@@ -390,7 +390,7 @@
 		<a class="burgers__next" href="#" id="slide-next">
 			<img class="arrow-right" src="./img/content/first/arrow-scroll.svg" alt="">
 		</a> -->
-	</div>
+		</a>
 </section>
 <section class="team section">
 	<div class="team__container">
@@ -610,22 +610,7 @@
 		</li>
 
 	</ul>
-	<div class="reviews__expanded-block">
-		<div class="reviews__expanded-block-top-row">
-			<div class="reviews__expanded-block-name">Константин Спилерг</div>
-			<a href="#" class="reviews__expanded-block-close"></a>
-		</div>
-		<div class="reviews__expanded-block-text">
-			<p>
-				Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
-				быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них.
-				Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
-				сочной, а сыр таким расплавленным.
-			</p>
-		</div>
 
-
-	</div>
 
 </section>
 
@@ -678,7 +663,7 @@
 						<textarea class="
 							form__input
 							form__textarea 
-					"></textarea>
+					" name="comment"></textarea>
 					</label>
 
 				</div>
@@ -703,7 +688,7 @@
 				</div>
 				<div class="form__row">
 					<a href="#" class="btn" id="order-btn">Заказать</a>
-					<a href="#" class="btn btn--bg-black">Очистить</a>
+					<a href="#" class="btn btn--bg-black" id='clearForm-btn'>Очистить</a>
 
 				</div>
 
@@ -843,7 +828,24 @@
 	</a>
 </div>
 </div>
+<div class="modal" id='modal'>
+	<div class="modal__container">
+		<div class="modal__top-row">
+			<div class="modal__name" id="modal__name">Константин Спилерг</div>
+			<a href="#" class="modal__close" id="modal__close"></a>
+		</div>
+		<div class="modal__text" id="modal__text">
+			<p>
+				Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
+				быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них.
+				Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+				сочной, а сыр таким расплавленным.
+			</p>
+		</div>
+	</div>
 
+
+</div>
 </body>
 <script src="./libs/jquery-3.3.1.min.js"></script>
 <script src="./libs/siema.min.js"></script>

@@ -1,6 +1,5 @@
 .ingredients {
 	background: rgba(227, 80, 40, 0.4);
-
 	width: 5.625rem;
 	height: 5.625rem;
 	border-radius: 0.3125rem;
@@ -12,6 +11,10 @@
 	align-items: center;
 	font-size: 1rem;
 
+	@include tablets {
+		top: -3rem;
+	}
+
 	&__text {
 		@extend %burgers-text;
 	}
@@ -22,13 +25,20 @@
 		position: absolute;
 		width: 16.875rem;
 		border-radius: 0.4375rem;
-		// left: -9999px;
-		left: 100%;
-		// opacity: 0;
-		opacity: 1;
+
+		left: -9999px;
+		opacity: 0;
+
 		transition: opacity .3s;
-		z-index: 2;
+		z-index: 3;
 		top: 0;
+		// left: 100%;
+		// opacity: 1;
+
+		.is-active & {
+			left: 100%;
+			opacity: 1;
+		}
 	}
 
 	&__list {

@@ -78,47 +78,5 @@
 	}
 
 
-	&__expanded-block {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		/* bring your own prefixes */
-		transform: translate(-50%, -50%);
 
-		width: 30rem;
-
-		@include phones {
-			width: 90%;
-		}
-
-		border-radius: 5px;
-		background-color: #fff;
-	}
-
-	&__expanded-block-top-row {
-		display: flex;
-		justify-content: space-between;
-		margin: 1rem;
-	}
-
-	&__expanded-block-name {
-		font-family: gagalin, cursive;
-		font-weight: 300;
-		font-size: 0.875rem;
-		text-transform: uppercase;
-		// margin-bottom: 1.5625rem;
-	}
-
-	&__expanded-block-close {
-		grid-area: close_icon;
-		content: url('../img/icons/close.svg');
-	}
-
-	&__expanded-block-text {
-		font-size: 0.875rem;
-		font-family: ubuntu, Verdana, Arial, sans-serif;
-		font-weight: 300;
-		// font-style: normal;
-		margin: 1rem;
-	}
 }

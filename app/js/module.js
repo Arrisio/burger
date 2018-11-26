@@ -1,3 +1,4 @@
+// Hamburger menu
 const menuBtn = document.querySelector('.hamburger-menu-link'),
 	hamMenu = document.getElementById('hamburger-menu'),
 	hamList = document.getElementById('nav__list_hamburger'),
@@ -9,9 +10,6 @@ function аsleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function аsleep(ms) {
-	return new Promise(resolve => setTimeout(resolve, ms));
-}
 async function toggleMenu() {
 	menuBtn.classList.toggle('is-active');
 	body.classList.toggle('is-locked');
@@ -42,8 +40,9 @@ document.addEventListener("keydown", e => {
 });
 
 
-allAccordions = document.getElementsByClassName('accordion');
 
+// all Accordions
+allAccordions = document.getElementsByClassName('accordion');
 
 
 function findParentAccordItem(elt) {
@@ -61,6 +60,7 @@ for (let accordList of allAccordions) {
 	accordList.addEventListener('click', e => {
 		e.preventDefault();
 		clickedAccordItem = findParentAccordItem(e.target);
+		// clickedAccordItem = e.target.closest('accordion__item');
 		clickedAccordMenuItems = clickedAccordItem.parentElement.getElementsByTagName("LI");
 
 		for (let accordItem of clickedAccordMenuItems) {

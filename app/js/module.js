@@ -181,5 +181,4 @@ document.getElementById('clearForm-btn').addEventListener('click', e => {
 $(".ingredients").on('click', e => {
 	e.preventDefault();
 	$(e.currentTarget).toggleClass('is-active');
-	console.log(e.currentTarget);
 })

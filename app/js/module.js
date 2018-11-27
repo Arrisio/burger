@@ -174,19 +174,16 @@ orderForm.addEventListener('submit', e => {
 // Burgers - скрыть.показать ингредиенты
 // let ingredientsVisibility = () => {
 $(".ingredients").on({
-		// click: e => {
-		// 	e.preventDefault();
-		// 	$(e.currentTarget).toggleClass('is-active');
-		// },
-		mouseenter: e => {
-			$(e.currentTarget).toggleClass('is-active');
-		},
-		mouseleave: e => {
-			$(e.currentTarget).removeClass('is-active');
-		}
-
+	// click: e => {
+	// 	e.preventDefault();
+	// 	$(e.currentTarget).toggleClass('is-active');
+	// },
+	mouseenter: e => {
+		$(e.currentTarget).toggleClass('is-active');
+	},
+	mouseleave: e => {
+		$(e.currentTarget).removeClass('is-active');
 	}
-
-)
+})
 
 // };

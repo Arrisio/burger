@@ -144,7 +144,7 @@ sliderPrevBtn.addEventListener('click', (e) => {
 const orderForm = document.getElementById('order-form');
 
 
-document.getElementById('order-btn').addEventListener('click', e => {
+orderForm.addEventListener('submit', e => {
 	e.preventDefault();
 	const formData = new FormData(),
 		URL = "https://webdev-api.loftschool.com/sendmail",
@@ -162,21 +162,14 @@ document.getElementById('order-btn').addEventListener('click', e => {
 	xhr.send(formData);
 	xhr.onload = function () {
 		let orderResponse = JSON.parse(xhr.responseText);
-		if (orderResponse.status >= 400) { //status 0 fail send
-			openModal(name = 'Ошибка', text = orderResponse.message);
-			// void(0);
-		} else {
+		if (orderResponse.status === 1 && xhr.status < 400) { //status 0 fail send
 			openModal(name = 'Сообщение', text = orderResponse.message);; //status 1 success send
+			orderForm.reset();
+		} else {
+			openModal(name = 'Ошибка', text = orderResponse.message);
 		};
 	}
 });
-
-// очищаем форму
-document.getElementById('clearForm-btn').addEventListener('click', e => {
-	e.preventDefault();
-	orderForm.reset()
-});
-
 
 // Burgers - скрыть.показать ингредиенты
 // let ingredientsVisibility = () => {

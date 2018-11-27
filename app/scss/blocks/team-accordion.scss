@@ -60,7 +60,7 @@
 		}
 
 		.is-active & {
-			max-height: 600px;
+			max-height: 100vh;
 		}
 	}
 
@@ -81,6 +81,7 @@
 
 	&__member-desc {
 		grid-area: desc;
+		margin: 0 2rem;
 	}
 
 }

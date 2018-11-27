@@ -177,8 +177,23 @@ document.getElementById('clearForm-btn').addEventListener('click', e => {
 	orderForm.reset()
 });
 
+
 // Burgers - скрыть.показать ингредиенты
-$(".ingredients").on('click', e => {
-	e.preventDefault();
-	$(e.currentTarget).toggleClass('is-active');
-})
+// let ingredientsVisibility = () => {
+$(".ingredients").on({
+		// click: e => {
+		// 	e.preventDefault();
+		// 	$(e.currentTarget).toggleClass('is-active');
+		// },
+		mouseenter: e => {
+			$(e.currentTarget).addClass('is-active');
+		},
+		mouseleave: e => {
+			$(e.currentTarget).removeClass('is-active');
+		}
+
+	}
+
+)
+
+// };

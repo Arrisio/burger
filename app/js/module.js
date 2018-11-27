@@ -186,7 +186,7 @@ $(".ingredients").on({
 		// 	$(e.currentTarget).toggleClass('is-active');
 		// },
 		mouseenter: e => {
-			$(e.currentTarget).addClass('is-active');
+			$(e.currentTarget).toggleClass('is-active');
 		},
 		mouseleave: e => {
 			$(e.currentTarget).removeClass('is-active');

@@ -194,7 +194,7 @@ ymaps.ready(init);
 
 function init() {
 	// Создание карты.    
-	var myMap = new ymaps.Map("map__map", {
+	var myMap = new ymaps.Map("map", {
 		// Координаты центра карты.
 		// Порядок по умолчанию: «широта, долгота».
 		// Чтобы не определять координаты центра карты вручную,

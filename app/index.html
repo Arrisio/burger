@@ -8,6 +8,7 @@
 	<title>Проект BURGER</title>
 
 	<link rel="stylesheet" href="./css/main.css">
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -698,7 +699,7 @@
 
 </section>
 <section class="map section" data-anchor="map">
-	<div class="map__map">
+	<div class="map__map" id="map__map">
 	</div>
 	<footer class="footer">
 		<div class="footer__contacts">
@@ -748,6 +749,8 @@
 		</div>
 	</footer>
 </section>
+
+</div>
 <div class="nav-screen">
 	<header class="header">
 		<a href="#" class="header__logo">
@@ -826,7 +829,6 @@
 	<a class="down-btn" href="#">
 		<img class="down-btn__img" src="./img/icons/arrow-scroll.svg" alt="go to next screen">
 	</a>
-</div>
 </div>
 <div class="modal" id='modal'>
 	<div class="modal__container">

@@ -16,9 +16,9 @@ async function toggleMenu() {
 	body.classList.toggle('is-locked');
 
 	for (let hamListItem of hamListItems) {
-		// console.log(hamListItem);
 		hamListItem.classList.toggle('is-active');
 		await аsleep(100);
+
 	};
 };
 

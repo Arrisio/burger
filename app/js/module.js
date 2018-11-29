@@ -203,6 +203,14 @@ function init() {
 		// Уровень масштабирования. Допустимые значения:
 		// от 0 (весь мир) до 19.
 		zoom: 13,
-		сontrols: ['zoomControl']
+		сontrols: ['zoomControl'],
+		behaviors: ['drag'],
 	})
+
+	var placemark = new ymaps.Placemark([59.93, 30.33], {
+		hintContent: "HINT",
+		balloonContent: "Balloon",
+	});
+
+	myMap.geoObjects.add(placemark);
 };

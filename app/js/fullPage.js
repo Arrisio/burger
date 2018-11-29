@@ -7,9 +7,9 @@ fullpage_api = new fullpage('#maincontent', {
 	navigation: true,
 	navigationPosition: 'right',
 	scrollBar: true,
-	navigationTooltips: ['hero', 'we-best', 'burgers', 'team', 'menu', 'reviews', 'form', 'contacts'],
-	showActiveTooltip: true,
-	slidesNavigation: true,
+	// navigationTooltips: ['hero', 'we-best', 'burgers', 'team', 'menu', 'reviews', 'form', 'contacts'],
+	// showActiveTooltip: true,
+	// slidesNavigation: true,
 
 });
 

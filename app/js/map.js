@@ -1,3 +1,4 @@
+// Скопипащено с официальной документации
 ymaps.ready(function () {
 	var myMap = new ymaps.Map('map', {
 			center: [59.93, 30.33],

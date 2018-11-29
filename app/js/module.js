@@ -187,30 +187,3 @@ $(".ingredients").on({
 })
 
 // };
-
-
-//Yandex Map
-ymaps.ready(init);
-
-function init() {
-	// Создание карты.    
-	var myMap = new ymaps.Map("map", {
-		// Координаты центра карты.
-		// Порядок по умолчанию: «широта, долгота».
-		// Чтобы не определять координаты центра карты вручную,
-		// воспользуйтесь инструментом Определение координат.
-		center: [59.93, 30.33],
-		// Уровень масштабирования. Допустимые значения:
-		// от 0 (весь мир) до 19.
-		zoom: 13,
-		сontrols: ['zoomControl'],
-		behaviors: ['drag'],
-	})
-
-	var placemark = new ymaps.Placemark([59.93, 30.33], {
-		hintContent: "HINT",
-		balloonContent: "Balloon",
-	});
-
-	myMap.geoObjects.add(placemark);
-};

@@ -1,0 +1,19 @@
+.how-work {
+	background-image: url('../img/how_work/bg.png');
+
+	& .container {
+		// height: rem(720px);
+	}
+
+	& .title {
+		text-align: center;
+
+	}
+
+	&__video {
+		width: 100%;
+		height: rem(720px);
+
+		// @include tablets {}
+	}
+}

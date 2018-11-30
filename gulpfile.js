@@ -47,7 +47,7 @@ gulp.task('styles', function () {
 
 gulp.task('js', function () {
 	return gulp.src([
-			'app/js/module.js', 'app/js/map.js' // Always at the end
+			'app/js/module.js', 'app/js/map.js', , 'app/js/ops.js' // Always at the end
 		])
 		.pipe(sourcemaps.init({
 			loadMaps: true

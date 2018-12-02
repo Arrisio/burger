@@ -3,16 +3,17 @@
 
 	& .container {
 		// height: rem(720px);
+		margin-bottom: 4rem;
 	}
 
 	& .title {
 		text-align: center;
-
 	}
 
-	&__video {
-		width: 100%;
-		height: rem(720px);
+	& .video-js {
+		width: 90%;
+		margin: 0 auto;
+		// height: rem(720px);
 
 		// @include tablets {}
 	}

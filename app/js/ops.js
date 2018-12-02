@@ -83,9 +83,9 @@ var initOps = (() => {
 			swipe: function (event, direction, distance, duration, fingerCount) {
 				console.log(distance, duration);
 				if (direction === 'up') {
-					ops.model.moveOn(-1);
-				} else if (direction === 'down') {
 					ops.model.moveOn(1);
+				} else if (direction === 'down') {
+					ops.model.moveOn(-1);
 				}
 			},
 			fingers: 'all'

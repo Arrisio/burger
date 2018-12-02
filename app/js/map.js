@@ -11,12 +11,12 @@ ymaps.ready(function () {
 		clusterer = new ymaps.Clusterer({
 			// Зададим массив, описывающий иконки кластеров разного размера.
 			clusterIcons: [{
-					href: '../img/contacts/map-marker.png',
+					href: './img/contacts/map-marker.png',
 					size: [46, 58],
 					offset: [-23, -29]
 				},
 				{
-					href: '../img/contacts/map-marker.png',
+					href: './img/contacts/map-marker.png',
 					size: [46, 58],
 					offset: [-23, -29]
 				}
@@ -44,7 +44,7 @@ ymaps.ready(function () {
 	for (var i = 0, len = points.length; i < len; i++) {
 		geoObjects[i] = new ymaps.Placemark(points[i], getPointData(i), {
 			iconLayout: 'default#imageWithContent',
-			iconImageHref: '../img/contacts/map-marker.png',
+			iconImageHref: './img/contacts/map-marker.png',
 			iconImageSize: [46, 58],
 			iconImageOffset: [-23, -29]
 		});

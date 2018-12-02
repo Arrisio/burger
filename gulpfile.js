@@ -11,7 +11,8 @@ var gulp = require('gulp'),
 	rsync = require('gulp-rsync'),
 	wait = require('gulp-wait'),
 	sourcemaps = require('gulp-sourcemaps')
-cors = require('cors');
+// cors = require('cors')
+;
 
 gulp.task('browser-sync', function () {
 	browsersync({

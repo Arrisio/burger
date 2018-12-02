@@ -1,0 +1,10 @@
+.ops {
+	// display: flex;
+	height: 100vh;
+	overflow: hidden;
+
+	&__container {
+		transform: translateY(0);
+		transition: transform .3s;
+	}
+}

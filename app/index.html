@@ -9,12 +9,12 @@
 
 	<link rel="stylesheet" href="./css/main.css">
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script src="libs/uppod-0.13.05.js" type="text/javascript"></script>
+
 </head>
 
 <body>
-	<div class="wrapper">
-		<div class="maincontent" id="maincontent">
+	<div class="wrapper ops">
+		<div class="maincontent ops__container" id="maincontent">
 <section class="hero section" id="hero">
 
 	<div class="container">
@@ -78,9 +78,7 @@
 		</div>
 
 	</header>
-	<a class="down-btn" href="#">
-		<img class="down-btn__img" src="./img/icons/arrow-scroll.svg" alt="go to next screen">
-	</a>
+
 </section>
 <section class="we-best section" id="we-best">
 	<div class="container">
@@ -147,7 +145,7 @@
 		</div>
 	</div>
 </section>
-<section class="burgers section" data-anchor="burgers">
+<section class="burgers section" id="burgers">
 	<div class="container burgers__container">
 
 
@@ -665,12 +663,11 @@
 	<div class="container">
 
 		<h2 class="title">как мы работаем</h2>
-		<!-- <div id="myplayer" class='how-work__video'></div> -->
-		<iframe src="https://www.youtube.com/embed/fFeV8WxIZLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+		<!-- <iframe src="https://www.youtube.com/embed/fFeV8WxIZLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 		 allowfullscreen class='how-work__video'></iframe>
-		</iframe>
+		</iframe> -->
 	</div>
-	<!-- <SCRIPT type=text/javascript>this.videoplayer=new Uppod( {m:"video",comment:"Название",uid:"myplayer", file:"https://youtu.be/HoXyw909Qu0" -->
+
 	} ); </script>
 </section>
 <section class="form-screen section" data-anchor="form">
@@ -807,8 +804,6 @@
 		</div>
 	</footer>
 </section>
-
-
 <!-- <div class="nav-screen">
 
 
@@ -816,6 +811,7 @@
 		<img class="down-btn__img" src="./img/icons/arrow-scroll.svg" alt="go to next screen">
 	</a>
 </div> -->
+</div>
 <div class="modal" id='modal'>
 	<div class="modal__container">
 		<div class="modal__top-row">
@@ -832,38 +828,44 @@
 		</div>
 	</div>
 </div>
-<div class="vert-slider">
-	<ul class="vert-slider__list">
-		<li class="vert-slider__item vert-slider__item--active">
-			<a href="#" class="vert-slider__link vert-slider__link--active"></a>
+<div class="ops-slider">
+	<ul class="ops-slider__list">
+		<li class="ops-slider__item is-active">
+			<a href="#" class="ops-slider__link "></a>
 		</li>
-		<li class="vert-slider__item">
-			<a href="#" class="vert-slider__link"></a>
+		<li class="ops-slider__item">
+			<a href="#" class="ops-slider__link"></a>
 		</li>
-		<li class="vert-slider__item">
-			<a href="#" class="vert-slider__link"></a>
+		<li class="ops-slider__item">
+			<a href="#" class="ops-slider__link"></a>
 		</li>
-		<li class="vert-slider__item">
-			<a href="#" class="vert-slider__link"></a>
+		<li class="ops-slider__item">
+			<a href="#" class="ops-slider__link"></a>
 		</li>
-		<li class="vert-slider__item">
-			<a href="#" class="vert-slider__link"></a>
+		<li class="ops-slider__item">
+			<a href="#" class="ops-slider__link"></a>
 		</li>
-		<li class="vert-slider__item">
-			<a href="#" class="vert-slider__link"></a>
+		<li class="ops-slider__item">
+			<a href="#" class="ops-slider__link"></a>
 		</li>
-		<li class="vert-slider__item">
-			<a href="#" class="vert-slider__link"></a>
+		<li class="ops-slider__item">
+			<a href="#" class="ops-slider__link"></a>
 		</li>
-		<li class="vert-slider__item">
-			<a href="#" class="vert-slider__link"></a>
+		<li class="ops-slider__item">
+			<a href="#" class="ops-slider__link"></a>
+		</li>
+		<li class="ops-slider__item">
+			<a href="#" class="ops-slider__link"></a>
 		</li>
 	</ul>
 
 </div>
-
+<a class="down-btn" href="#">
+	<img class="down-btn__img" src="./img/icons/arrow-scroll.svg" alt="go to next screen">
+</a>
+</div>
 <!-- <script type="text/javascript" src="./libs/fullpage.min.js"></script> -->
-<script type="text/javascript" src="./libs/fullpage.extensions.min.js"></script>
+<!-- <script type="text/javascript" src="./libs/fullpage.extensions.min.js"></script> -->
 <!-- <script type="text/javascript" src="./js/fullPage.js"></script> -->
 </body>
 <script src="./libs/jquery-3.3.1.min.js"></script>

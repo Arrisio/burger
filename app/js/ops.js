@@ -68,6 +68,7 @@ var initOps = (() => {
 		})
 		$(document).on({
 			'keydown': e => {
+				// кнопки вверх и вниз
 				switch (e.keyCode) {
 					case 40:
 						ops.model.moveOn(1);

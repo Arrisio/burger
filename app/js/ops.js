@@ -66,6 +66,11 @@ var initOps = (() => {
 			e.preventDefault();
 			ops.model.moveTo($(this).index());
 		})
+		$('.nav__item').on('click', function (e) {
+			e.preventDefault();
+			//$(this).index() - номер слайдера(т.е. секции) на который ткнули
+			ops.model.moveTo($(this).index());
+		})
 		$(document).on({
 			'keydown': e => {
 				// кнопки вверх и вниз

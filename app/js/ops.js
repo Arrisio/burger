@@ -1,9 +1,11 @@
 var initOps = (() => {
 	ops = {};
 	ops.model = (() => {
-		var currentPosition = 0;
+		var currentPosition = 0,
+			flagBlocked = false;;
 		const minPosition = 0,
-			maxPosition = $('.section').length - 1;
+			maxPosition = $('.section').length - 1,
+			blockDuration = 300;
 
 		moveTo = ((newPosition) => {
 			isLastPosition = (newPosition === maxPosition);
@@ -13,11 +15,18 @@ var initOps = (() => {
 			}
 		})
 		moveOn = ((deltaY) => {
-			let newPosition = Math.max(
-				Math.min((currentPosition + deltaY), maxPosition),
-				minPosition
-			)
-			moveTo(newPosition);
+
+			if (!flagBlocked) {
+				flagBlocked = true;
+				let newPosition = Math.max(
+					Math.min((currentPosition + deltaY), maxPosition),
+					minPosition
+				)
+				moveTo(newPosition);
+				setTimeout(() => {
+					flagBlocked = false;
+				}, blockDuration)
+			}
 		})
 
 		moveDown = function () {
@@ -56,7 +65,11 @@ var initOps = (() => {
 	ops.controll = (() => {
 		$('.ops').on('wheel', e => {
 			e.preventDefault();
-			ops.model.moveOn(Math.floor(e.originalEvent.deltaY / 100));
+			if (e.originalEvent.deltaY > 0) {
+				ops.model.moveOn(1)
+			} else if (e.originalEvent.deltaY < 0) {
+				ops.model.moveOn(-1)
+			}
 		});
 		$('.down-btn').on('click', e => {
 			e.preventDefault();
